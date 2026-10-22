@@ -1,0 +1,19 @@
+# Install CUDA-matched torch and torchvision separately before these dependencies.
+accelerate
+cython
+einops
+huggingface_hub
+kornia
+munch
+natsort
+numpy
+open3d
+opencv-python
+pillow
+plyfile
+pyyaml
+safetensors
+scipy
+timm
+tqdm
+transformers

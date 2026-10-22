@@ -1,0 +1,35 @@
+Dataset:
+  pcd_downsample: 1
+  pcd_downsample_init: 1
+  adaptive_pointsize: true
+  point_size: 0.05
+  scale_multiplier: 2.0
+Training:
+  window_size: 10
+  size_threshold: 20
+opt_params:
+  position_lr_init: 0.00016
+  position_lr_final: 0.0000016
+  position_lr_max_steps: 26000
+  feature_lr: 0.0025
+  opacity_lr: 0.05
+  scaling_lr: 0.001
+  rotation_lr: 0.001
+  percent_dense: 0.01
+  lambda_dssim: 0.2
+  densify_grad_threshold: 0.0002
+MGS:
+  sh_degree: 0
+  max_keyframes: 128
+  scene_extent: 6.0
+  far_plane: 100.0
+  min_point_confidence: 0.0
+  adaptive_sampling: true
+  sample_tile: 16
+  sample_max_points: 15000
+  init_iterations: 500
+  mapping_iterations: 10
+  final_iterations: 1000
+  depth_loss_weight: 0.1
+  densify_every: 150
+  min_opacity: 0.005
